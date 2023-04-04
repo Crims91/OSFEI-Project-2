@@ -159,7 +159,7 @@ a {
 
 .game-rules {
   display: flex;
-  justify-content: right;
+  justify-content: center;
 }
 
 .rule {

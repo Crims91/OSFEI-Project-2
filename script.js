@@ -113,8 +113,8 @@ window.addEventListener("load", function () {
 
   // To display the hands text, images and Play again button after I choose my card
 
-  rpsButtons.forEach((card) => {
-    card.addEventListener("click", () => {
+  rpsButtons.forEach((button) => {
+    button.addEventListener("click", () => {
       handsBlock.style.display = "flex";
       resetBlock.style.display = "flex";
     });
