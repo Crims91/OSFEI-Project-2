@@ -30,7 +30,7 @@ h6 {
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 0 5px 10px;
 }
 
 a {
@@ -129,13 +129,13 @@ a {
   color: lightyellow;
 }
 
-.play-again {
+.reset {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 }
 
-.play-again-button {
+.reset-button {
   font-size: 20px;
   color: #ffffff;
 
@@ -153,15 +153,13 @@ a {
   transition: opacity 0.3s ease-out;
 }
 
-.play-again-button:hover {
+.reset-button:hover {
   opacity: 0.8;
 }
 
 .game-rules {
-  display: inline-block;
-
-  border: 1px solid #ffffff;
-  border-radius: 3px;
+  display: flex;
+  justify-content: right;
 }
 
 .rule {
@@ -171,6 +169,26 @@ a {
   font-size: 20px;
 
   padding: 10px;
+}
+
+.game-rules details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.game-rules summary {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/**** Hidden Blocks ***/
+
+.hands-block,
+.reset {
+  display: none;
 }
 
 @media only screen and (max-width: 955px) {

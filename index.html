@@ -57,7 +57,7 @@
           </button>
         </div>
 
-        <div class="hands-block" id="hands-block">
+        <div class="hands-block">
           <div class="user-hands">
             <h4>User</h4>
             <img
@@ -72,7 +72,7 @@
             <h4>Computer</h4>
             <img
               class="hands-card"
-              src="img/rock.png"
+              src="img/paper.png"
               alt="Rock"
               height="100px"
               width="100px"
@@ -82,28 +82,31 @@
         <div class="result">
           <h3 class="result-heading" id="result">&nbsp;</h3>
         </div>
-        <div class="play-again">
-          <button type="button" class="play-again-button" id="newGame">
-            Play again
+        <div class="reset">
+          <button type="button" class="reset-button" id="reset-button">
+            Reset Score
           </button>
         </div>
 
         <div class="game-rules">
-          <div class="rule first-rule">
-            <img src="img/paper.png" alt="" width="50px" height="50px" />
-            <p>Beats</p>
-            <img src="img/rock.png" alt="" width="50px" height="50px" />
-          </div>
-          <div class="rule second-rule">
-            <img src="img/rock.png" alt="" width="50px" height="50px" />
-            <p>Beats</p>
-            <img src="img/scissors.png" alt="" width="50px" height="50px" />
-          </div>
-          <div class="rule fird-rule">
-            <img src="img/scissors.png" alt="" width="50px" height="50px" />
-            <p>Beats</p>
-            <img src="img/paper.png" alt="" width="50px" height="50px" />
-          </div>
+          <details>
+            <summary>Game Rules</summary>
+            <div class="rule first-rule">
+              <img src="img/paper.png" alt="" width="50px" height="50px" />
+              <p>beats</p>
+              <img src="img/rock.png" alt="" width="50px" height="50px" />
+            </div>
+            <div class="rule second-rule">
+              <img src="img/rock.png" alt="" width="50px" height="50px" />
+              <p>beats</p>
+              <img src="img/scissors.png" alt="" width="50px" height="50px" />
+            </div>
+            <div class="rule fird-rule">
+              <img src="img/scissors.png" alt="" width="50px" height="50px" />
+              <p>beats</p>
+              <img src="img/paper.png" alt="" width="50px" height="50px" />
+            </div>
+          </details>
         </div>
       </div>
     </main>
