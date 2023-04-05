@@ -1,7 +1,10 @@
 window.addEventListener("load", function () {
-  const totalScore = { playerScore: 0, computerScore: 0 };
-  let playerCounter = 1;
-  let computerCounter = 1;
+  // Start Sreen
+  const startScreen = document.querySelector(".start-screen");
+  const startButton = document.querySelector(".start-button");
+  startButton.addEventListener("click", function () {
+    startScreen.style.display = "none";
+  });
 
   const playerScoreDiv = document.getElementById("player-score");
   const computerScoreDiv = document.getElementById("computer-score");
@@ -11,6 +14,10 @@ window.addEventListener("load", function () {
   const resetBlock = document.querySelector(".reset");
   const rpsButtons = document.querySelectorAll(".card");
   const resultDiv = document.getElementById("result");
+
+  const totalScore = { playerScore: 0, computerScore: 0 };
+  let playerCounter = 1;
+  let computerCounter = 1;
 
   const getComputerChoice = () => {
     const rpsChoice = ["Rock", "Paper", "Scissors"];
@@ -111,7 +118,7 @@ window.addEventListener("load", function () {
 
   document.getElementById("reset-button").addEventListener("click", resetGame);
 
-  // To display the hands text, images and Play again button after I choose my card
+  // To display the hands text, images and play-again button after I choose my card
 
   rpsButtons.forEach((button) => {
     button.addEventListener("click", () => {
