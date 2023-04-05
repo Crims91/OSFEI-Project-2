@@ -94,7 +94,7 @@ const resetGame = () => {
   computerScoreDiv.textContent = `Computer score: 0`;
   userImg.src = "img/paper.png";
   computerImg.src = "img/paper.png";
-  resultDiv.textContent = "&nbsp;";
+  resultDiv.innerHTML = "&nbsp;";
 };
 
 document.getElementById("reset-button").addEventListener("click", resetGame);
