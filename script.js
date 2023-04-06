@@ -92,8 +92,6 @@ const resetGame = () => {
 
   userScoreDiv.textContent = `Your score: 0`;
   computerScoreDiv.textContent = `Computer score: 0`;
-  userImg.src = "img/paper.png";
-  computerImg.src = "img/paper.png";
   resultDiv.innerHTML = "&nbsp;";
 };
 
