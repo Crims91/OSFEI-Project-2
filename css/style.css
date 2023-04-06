@@ -5,6 +5,8 @@ html {
 body {
   margin: auto;
   padding: 0;
+  max-width: 100vw;
+  min-height: 750px;
 
   color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -35,11 +37,6 @@ p {
 
 a {
   text-decoration: none;
-}
-
-.page {
-  max-width: 100vw;
-  min-height: 750px;
 }
 
 .container {
