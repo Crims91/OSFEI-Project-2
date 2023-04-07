@@ -1,4 +1,3 @@
-// Start Sreen
 const startScreen = document.querySelector(".start-screen");
 const startButton = document.querySelector(".start-button");
 startButton.addEventListener("click", function () {
@@ -11,16 +10,16 @@ const userImg = document.querySelector(".user-hands img");
 const computerImg = document.querySelector(".computer-hands img");
 const handsBlock = document.querySelector(".hands-block");
 const resetBlock = document.querySelector(".reset");
-const rpsButtons = document.querySelectorAll(".card");
+const handsButtons = document.querySelectorAll(".card");
 const resultDiv = document.getElementById("result");
 
 const totalScore = { userScore: 0, computerScore: 0 };
 
 const getComputerChoice = () => {
-  const rpsChoice = ["Rock", "Paper", "Scissors"];
+  const handsChoice = ["Rock", "Paper", "Scissors"];
   const randomNumber = Math.floor(Math.random() * 3);
 
-  return rpsChoice[randomNumber];
+  return handsChoice[randomNumber];
 };
 
 const getWinResult = (userChoice, computerChoice) => {
@@ -39,7 +38,6 @@ const getWinResult = (userChoice, computerChoice) => {
   }
 };
 
-// Function to change title and color in DOM
 const changeResultDiv = (title, color) => {
   resultDiv.textContent = title;
   resultDiv.style.color = color;
@@ -67,19 +65,15 @@ const updateHandsImg = (userChoice, computerChoice) => {
   computerImg.src = `img/${computerChoice.toLowerCase()}.png`;
 };
 
-const onClickRps = (userChoice) => {
+const onClickHanlder = (userChoice) => {
   const computerChoice = getComputerChoice();
   updateHandsImg(userChoice, computerChoice);
   getResult(userChoice, computerChoice);
-
-  // console.log({ userChoice });
-  // console.log({ computerChoice });
-  // console.log(totalScore);
 };
 
 const playGame = () => {
-  rpsButtons.forEach((rpsButton) => {
-    rpsButton.onclick = () => onClickRps(rpsButton.value);
+  handsButtons.forEach((button) => {
+    button.onclick = () => onClickHanlder(button.value);
   });
 };
 
@@ -97,9 +91,7 @@ const resetGame = () => {
 
 document.getElementById("reset-button").addEventListener("click", resetGame);
 
-// To display the hands text, images and play-again button after I choose my card
-
-rpsButtons.forEach((button) => {
+handsButtons.forEach((button) => {
   button.addEventListener("click", () => {
     handsBlock.style.display = "flex";
     resetBlock.style.display = "flex";
